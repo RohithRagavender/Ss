@@ -1,0 +1,741 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+  background-color: #000000;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background-image: url(./star2.jpg);
+}
+
+.pages {
+  width: 100%;
+}
+
+
+video {
+  position: absolute;
+  object-fit: fill;
+  width: 98.9vw;
+  height: 100Vh;
+  top: 0px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0px;
+  height: 50px;
+}
+
+.logo img {
+  position: absolute;
+  left: 20px;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #09c372;
+  width: 50px;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: black;
+}
+
+ul li {
+  padding: 10px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: red;
+  border-radius: 5px;
+}
+
+#login,
+#signup {
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+#login {
+  border: 1px solid #498afb;
+}
+
+#signup {
+  border: 1px solid #ff3860;
+}
+
+#signup a {
+  color: #ff3860;
+}
+
+#login a {
+  color: #498afb;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/*
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+*/
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  height: 40vh;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+span {
+  color: rgb(255, 104, 29);
+  font-size: larger;
+}
+
+.text {
+  margin-left: 50px;
+  position: relative;
+  font-size: xx-large;
+  margin-top: 15px;
+}
+
+#Home {
+  margin-top: 9%;
+}
+
+.name {
+  position: relative;
+  width: fit-content;
+  top: 15%;
+}
+
+.name h2 {
+  line-height: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 45px;
+  margin-left: 25px;
+}
+
+.para {
+  width: 50%;
+  position: relative;
+  top: 20%;
+}
+
+.para p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: large;
+  text-align: justify;
+  line-height: 50px;
+  margin-left: 55px;
+  color: white;
+  text-shadow: 2px 2px 8px #FF0000;
+}
+
+
+/*About Section */
+
+.about img{
+  background-size: cover;
+  width: 100%;
+}
+
+.about {
+  height: 600px;
+  position: relative;
+  width: 100%;
+  top:120px;
+}
+
+.about .box {
+  width: 70%;
+  height: 450px;
+  background-color:white;
+  position:absolute;
+  top: 65px;
+  left: 200px;
+  display: flex;
+  border-radius: 50px;
+  box-shadow: 2px 2px 9px 2px white;
+}
+
+
+.about .box .left .pic img {
+  width: 440px;
+  height: 440px;
+  border-radius: 50px 80px 50px 80px;
+  padding: 10px;
+  position: relative;
+  top:5px;
+
+}
+
+/*
+.about .box .left .pic {
+transform: rotate(-30deg);
+}*/
+.about .box .left {
+  width: 45%;
+  height: 450px;
+}
+
+.about .box .right {
+
+  width: 55%;
+  height: 450px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  line-height: 35px;
+  padding: 60px;
+}
+
+.about .box .right p {
+  font-size: 2ch;
+  color:black;
+}
+
+/* About section End 
+
+/*Project Section */
+
+#sect {
+  display: none;
+}
+
+#hr {
+  background-color: rgba(19, 10, 56, 0.549);
+  position: relative;
+  left: 600px;
+  background-color:aliceblue;
+  font-size: 55px;
+  padding: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:black;
+  border-radius: 100% 0% 100% 0% / 35% 67% 33% 65% ;
+  width: fit-content;
+}
+
+
+
+.page .box1 {
+  width: 60%;
+  height: 300px;
+  background-color:transparent;
+  position: relative;
+  top: 20px;
+  left: 150px;
+  display: flex;
+}
+
+.page .box1 .left {
+  flex-basis: 40%;
+
+}
+
+.page .box1 .left img {
+  width: 90%;
+  height: 300px;
+}
+
+.page .box1 .right {
+  flex-basis: 60%;
+  color: white;
+  padding: 40px;
+
+}
+
+.page .box2 {
+  width: 60%;
+  height: 300px;
+  background-color: transparent;
+  position: relative;
+  top: 20px;
+  left: 400px;
+  display: flex;
+}
+
+.page .box2 .right {
+  flex-basis: 40%;
+
+}
+
+.page .box2 .right img {
+  width: 90%;
+  height: 300px;
+  margin-left: 30px;
+}
+
+.page .box2 .left {
+  flex-basis: 60%;
+  color: white;
+  padding: 40px;
+
+}
+
+.page .box3 {
+  width: 60%;
+  height: 300px;
+  background-color:transparent;
+  position: relative;
+  top: 20px;
+  left: 150px;
+  display: flex;
+}
+
+.page .box3 .left {
+  flex-basis: 40%;
+
+}
+
+.page .box3 .left img {
+  width: 90%;
+  height: 300px;
+}
+
+.page .box3 .right {
+  flex-basis: 60%;
+  color: white;
+  padding: 40px;
+
+}
+
+.page .box4 {
+  width: 60%;
+  height: 300px;
+  background-color:transparent;
+  position: relative;
+  top: 20px;
+  left: 400px;
+  display: flex;
+}
+
+.page .box4 .right {
+  flex-basis: 40%;
+}
+
+.page .box4 .right img {
+  width: 90%;
+  height: 300px;
+  margin-left: 30px;
+}
+
+.page .box4 .left {
+  flex-basis: 60%;
+  color: white;
+  padding: 40px;
+
+}
+
+/*Project Section */
+
+/*Achivement Section Starting*/
+
+.h1 {
+  position: relative;
+  top: 95px;
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.achivements {
+  padding-top: 25vh;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  grid-template-rows: 50vh 50vh;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+.items {
+
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+}
+
+.items .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.items .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+
+}
+
+.items:hover .image img {
+  transform: scale(1.1);
+  filter: blur(2px);
+  transition: 0.5s;
+}
+
+.items .text {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  font-family: 'inter', sans-serif;
+  font-size: 19px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.items:hover .text {
+  opacity: 1;
+  margin-left:0px;
+}
+
+
+
+/*Achivements Section Ending*/
+
+
+
+/* Media Quer */
+@media screen and (max-width:600px) {
+
+
+  .pages {
+    width: 100%;
+  }
+
+  video {
+    object-fit: cover;
+    width: 555.5px;
+    height: 250vh;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .logo img {
+    width: 29%;
+  }
+
+  .hr {
+    display: none;
+  }
+
+  #hr {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+    z-index: 1;
+    margin-right: 10px;
+  }
+
+  #Home {
+    margin-top: 150px;
+  }
+
+  .name h2 {
+    width: fit-content;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .name span {
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .para p {
+    width: 450px;
+    text-align: justify;
+    margin-left: 42px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .about .box {
+    margin-left: -160px;
+    top: 40px;
+    width: 450px;
+    height: 130vh;
+  }
+
+  .about .box .right p {
+    width: 450px;
+    line-height: 50px;
+    margin-left: -55px;
+    text-align: justify;
+    margin-top: 150px;
+    padding: 15px;
+
+  }
+
+  .left .pic img {
+    margin-left: -190px;
+    margin-top: -100px;
+  }
+
+  .about .box .left .pic {
+    transform: rotate(0deg);
+  }
+
+  .about .box .left .pic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    padding: 10px;
+    position: relative;
+    top: 110px;
+    left: 80px;
+  }
+
+  .page {
+    display: none;
+  }
+
+  #sect {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1820px;
+    left: -65px;
+    width: 80%;
+    gap: 25%;
+  }
+
+
+  .h2 {
+    position: relative;
+    top: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 8px #FF0000;
+  }
+
+  .full-container {
+    width: 165px;
+    margin-left: 150px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .h2 {
+    text-align: center;
+    margin-left: 50px;
+  }
+
+  .image {
+    width: 600px;
+    position: relative;
+    top: 400px;
+    left: 25px;
+  }
+
+  img {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+
+  .content {
+    width: 50%;
+    top: -30px;
+    left: 145;
+    height: 271px;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, .6);
+    opacity: 0;
+    transition: .8s;
+  }
+
+  #Achievement {
+    margin-top: 95px;
+  }
+
+  .content:hover {
+    opacity: 1;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 30px;
+
+  }
+
+  .content h2 {
+    color: yellow;
+    font-size: small;
+    margin-bottom: 20px;
+  }
+
+  .content p {
+    font-size: small;
+    color: white;
+    margin-top: -15px;
+    text-align: justify;
+  }
+
+  .content>* {
+    transform: translateY(-100px);
+    transition: .5s;
+  }
+
+  .content:hover>* {
+    transform: translateY(0px);
+
+  }
+
+  #Achievement {
+    position: relative;
+    top: 1900px;
+  }
+
+  .about img{
+    display: none;
+  }
+
+  .about .pic img{
+    display: block;
+  }
+
+
+  .h1 {
+    position: relative;
+    left: 100px;
+    width: 100%;
+  }
+
+  .achivements {
+    position: relative;
+    height: 60%;
+    width: 10vw;
+    top: -95px;
+    display: inline-block;
+    align-items: center;
+    border: none;
+    justify-content: center;
+  }
+
+  .items {
+    top: 95px;
+    left: 70px;
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    margin-bottom: 25px;
+  }
+
+  .items .image{
+    position: relative;
+    top: 0;
+  }
+  .text{
+    
+    font-size:medium;
+  }
+
+  .items:hover .text {
+    opacity: 1;
+    position: absolute;
+    top:-15px;
+    left:25px;
+    text-align: justify;
+    transition: 0.5s;
+    font-size: 10px;
+  }
+
+}
